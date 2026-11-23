@@ -5,13 +5,13 @@ import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBWZVSe6u1J3WM8WXZ-s3ibRIJEkHhBMQk',
-  authDomain: 'dreamelevenclone.firebaseapp.com',
-  projectId: 'dreamelevenclone',
-  storageBucket: 'dreamelevenclone.appspot.com',
-  messagingSenderId: '438326678548',
-  appId: '1:438326678548:web:df3d8f83998c66c3ef4301',
-  measurementId: 'G-SC62SMG6E5',
+  apiKey: 'AIzaSyDVEgWb0rKOlHqMyS3vwShlBTjIX7crT0E',
+  authDomain: 'dream-11-clone-9f121.firebaseapp.com',
+  projectId: 'dream-11-clone-9f121',
+  storageBucket: 'dream-11-clone-9f121.firebasestorage.app',
+  messagingSenderId: '265645263703',
+  appId: '1:265645263703:web:c6bd9ac474138e21794c12',
+  measurementId: 'G-SRG591Y2V8'
 };
 
 // Initialize Firebase
