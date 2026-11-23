@@ -65,7 +65,7 @@ function geturl() {
     // return "https://dreamelevenclonebackend-g4iw.onrender.com";
     // return "https://dreamcricket11.com";
     // return "https://backend.dreambet11.io";
-    return "https://gclteam.duckdns.org";
+    return "https://dream11-backend-cpve.onrender.com";
     // return "https://dream11-api.insenc.in";
     // return "http://localhost:8000";
     // return "https://mangogames.fun/api"
