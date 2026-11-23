@@ -79,7 +79,7 @@ function geturl() {
   // return "http://54.172.255.164";
   // return 'https://apk.thepowerplay.co';
   // return 'http://localhost:8000';
-  return "https://gclteam.duckdns.org";
+  return "https://dream11-backend-cpve.onrender.com";
   // return 'http://46.28.44.4:8000';
   // return "https://dreamcricket11.com";
   // return "https://dreamelevenclonebackend-g4iw.onrender.com"
