@@ -230,7 +230,7 @@ export function LeaderBoard({ leaderboard, contest }) {
                             marginRight: '5px',
                           }}
                         />
-                        <p>you won ₹500</p>
+                        <p>Rank #{index + 1}</p>
                       </Won>
                     </Name>
                   </Profile>

@@ -35,12 +35,6 @@ const columns = [
     renderCell: MatchesJoined,
   },
   {
-    field: 'wallet',
-    headerName: 'BALANCE',
-    width: 100,
-    editable: true,
-  },
-  {
     field: 'numberOfContestJoined',
     headerName: 'CONTESTS JOINED',
     width: 90,

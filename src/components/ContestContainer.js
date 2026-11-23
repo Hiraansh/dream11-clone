@@ -37,11 +37,11 @@ export default function ContestContainerN({
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
         <span style={{ display: "flex", alignItems: "center", fontWeight: 600, fontSize: 18 }}>
-          <MonetizationOnOutlinedIcon style={{ color: "var(--red)", marginRight: 4 }} />
-          ₹{price}
+          <EmojiEventsOutlinedIcon style={{ color: "var(--green)", marginRight: 4 }} />
+          Free
         </span>
         <span style={{ fontWeight: 500, fontSize: 15 }}>
-          Entry&nbsp;<b>₹{entryFee}</b>
+          Entry&nbsp;<b>Free</b>
         </span>
       </div>
       <div style={{ marginBottom: 8, display: "flex", gap: 8, alignItems: "center" }}>

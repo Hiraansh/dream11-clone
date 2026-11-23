@@ -146,9 +146,8 @@ export function JoinedContests({ players }) {
                 <p>Entry</p>
               </First>
               <First>
-                <h1>2.50 lacks</h1>
+                <h1>Free</h1>
                 <First>
-                  <del>₹ 19</del>
                   <FreeButton>Free</FreeButton>
                 </First>
               </First>

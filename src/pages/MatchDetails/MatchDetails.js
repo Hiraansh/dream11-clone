@@ -566,54 +566,9 @@ export function MatchDetails({ players }) {
       </>
       <Drawer anchor="top" open={walletOpen} onClose={() => setWalletOpen(false)}>
         <DeatilTop>
-          <p>total balance</p>
-          <h5>
-            ₹
-            {user && user.wallet}
-          </h5>
+          <p>Play for free</p>
+          <h5>No entry fees</h5>
         </DeatilTop>
-        <AddButton
-          onClick={() => navigate('/payment', {
-            state: {
-              tab: 'deposit',
-            },
-          })}
-        >
-          add cash
-        </AddButton>
-        <Deatil>
-          <p>Amount added</p>
-          <h5>
-            ₹
-            {user?.totalAmountAdded}
-          </h5>
-        </Deatil>
-        <Deatil>
-          <WithdrawContainer container>
-            <Grid item sm={7} xs={7}>
-              <p>winnings</p>
-              <h5>
-                ₹
-                {user?.totalAmountWon}
-              </h5>
-            </Grid>
-            <Grid item sm={5} xx={5}>
-              <Button
-                onClick={() => navigate('/transaction', {
-                  state: {
-                    tab: 'withdrawal',
-                  },
-                })}
-              >
-                Withdraw
-              </Button>
-            </Grid>
-          </WithdrawContainer>
-        </Deatil>
-        <Deatil>
-          <p>cash bonus</p>
-          <h5>₹ 0</h5>
-        </Deatil>
       </Drawer>
     </Container>
   );

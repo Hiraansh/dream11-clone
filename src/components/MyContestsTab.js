@@ -60,11 +60,11 @@ export default function MyContestsTab({ contest, matchlive, navigate, setValue }
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                   <span style={{ display: "flex", alignItems: "center", fontWeight: 600, fontSize: 18 }}>
-                    <MonetizationOnOutlinedIcon style={{ color: "var(--red)", marginRight: 4 }} />
-                    ₹{tab?.contest?.price}
+                    <EmojiEventsOutlinedIcon style={{ color: "var(--green)", marginRight: 4 }} />
+                    Free
                   </span>
                   <span style={{ fontWeight: 500, fontSize: 15 }}>
-                    Entry&nbsp;<b>₹{Math.floor(tab?.contest?.price / tab?.contest?.totalSpots)}</b>
+                    Entry&nbsp;<b>Free</b>
                   </span>
                 </div>
                 <div style={{ marginBottom: 8, display: "flex", gap: 8, alignItems: "center" }}>
@@ -127,7 +127,7 @@ export default function MyContestsTab({ contest, matchlive, navigate, setValue }
                         <div style={{ fontWeight: 600 }}>{t?.username}</div>
                         {matchlive?.result === 'Complete' ? (
                           <div style={{ color: 'var(--green)', fontSize: 12 }}>
-                            you won ₹{t.won}
+                            Rank #{t?.rank}
                           </div>
                         ) : (
                           <div style={{ color: 'var(--green)', fontSize: 12 }}>

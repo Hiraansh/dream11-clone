@@ -550,8 +550,8 @@ export default function MatchTabs({ tabs, g, livescore, getdata }) {
                   </Last>
                 </ContestContainer>*/}
                 <ContestContainerN
-                  price={tab.price}
-                  entryFee={Math.floor(tab.price / tab.totalSpots)}
+                  price={0}
+                  entryFee={0}
                   totalSpots={tab.totalSpots}
                   spotsLeft={tab.spotsLeft}
                   numWinners={tab.numWinners}

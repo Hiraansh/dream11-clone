@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { useEffect, useState } from 'react';
 import ReactCanvasConfetti from 'react-confetti';
-import ReactGA from 'react-ga';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { WhatsAppWidget } from 'react-whatsapp-widget';
@@ -30,30 +29,24 @@ import Contests from './pages/MatchDetails/MatchDetails';
 import More from './components/more';
 import MyInfo from './components/myinfo/MyInfo';
 import NewUsers from './components/newUsers';
-import Payment from './components/payment';
 import Players from './components/players';
 import PrivacyPolicy from './components/privacyPolicy';
-import Refund from './components/refund';
 import Register from './pages/register';
 import SavedTeam from './components/savedteam';
 import TermsAndConditions from './components/termsAndConditions';
 import Test from './components/test';
-import TransactionTabs from './components/transaction';
 import PlayerDetail from './components/playerDetail';
 import SeriesDetails from './components/seriesdetails';
 import MatchAnalysis from './components/analytics/matchAnalysis';
 import Bowler from './components/Bowler';
 import { URL } from './constants/userConstants';
 import { getConfig } from './actions/configAction';
-import WithdrawCashPage from './components/withdrawPolicy';
 import GamizoCoins from './pages/GamizoCoins';
 import ReferWin from './pages/ReferWin';
 import Games from './pages/Games';
 import GithubCallback from './pages/GithubCallBack';
 import LoginPhone from './pages/phoneLogin';
 import UserKYC from './components/kyc';
-import MyTransactions from './components/transactions';
-import PaymentStatusPage from './pages/PayementStatusPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -100,17 +93,10 @@ function App() {
     };
   }, [dimensions]);
 
-  const TRACKING_ID = 'G-YWB7BCRZML';
-  ReactGA.initialize(TRACKING_ID);
-
   useEffect(() => {
     dispatch(loadUser());
     dispatch(getConfig())
   }, [dispatch]);
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
 
   const checkUserToken = () => {
     const userToken = localStorage.getItem('user-token');
@@ -166,19 +152,14 @@ function App() {
           <Route path="/joined" element={<JoinedContests />} />
           <Route path="/test" element={<Test />} />
           <Route path="/counter" element={<Counter />} />
-          <Route path="/payment" element={<Payment />} />
           <Route path="/googlelogin" element={<Logingoogle />} />
           <Route path="/newusers" element={<NewUsers />} />
           <Route path="/findpeople" element={<FindPeople />} />
           <Route path="/my-info" element={<MyInfo />} />
-          <Route path="/transaction" element={<TransactionTabs />} />
-          <Route path="/my-transactions" element={<MyTransactions />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/withdrawPolicy" element={<WithdrawCashPage />} />
           <Route path="/matchanalysis/:id" element={<MatchAnalysis />} />
           <Route path="/termsAndConditions" element={<TermsAndConditions />} />
-          <Route path="/refund" element={<Refund />} />
           <Route path="/helpAndSupport" element={<HelpAndSupport />} />
           <Route path="/more" element={<More />} />
           <Route path="/donate" element={<Donate />} />
@@ -189,7 +170,6 @@ function App() {
           <Route path="/referwin" element={<ReferWin />} />
           <Route path="/games" element={<Games />} />
           <Route path="/github-callback" element={<GithubCallback />} />
-          <Route path="/payment-status/:orderId" element={<PaymentStatusPage />} />
         </Routes>
       </BrowserRouter>
       {confetti && (
@@ -200,7 +180,7 @@ function App() {
         />
       )}
       <div className="whatsappwidget">
-        <WhatsAppWidget phoneNumber="7860142652" />
+        <WhatsAppWidget phoneNumber="9986021727" />
       </div>
       <ToastContainer />
     </>

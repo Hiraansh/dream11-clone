@@ -331,13 +331,7 @@ export function ContestDetail() {
                   )}
                 </LeftSide>
                 <RightSide>
-                  <WalletBox onClick={() => setWalletOpen(true)}>
-                    <IconWrapper>
-                      <AccountBalanceWalletOutlinedIcon style={{ fontSize: "16px" }} />
-                    </IconWrapper>
-                    ₹{user?.wallet}
-                    <PlusButton>+</PlusButton>
-                  </WalletBox>
+                  <span style={{ fontSize: "16px", color: "#fff" }}>Free Entry</span>
                 </RightSide>
               </Top>
               <Contest contest={contest} handleClick={handleClick} />

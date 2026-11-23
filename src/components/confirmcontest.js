@@ -146,27 +146,9 @@ export default function ConfirmModal({
           <Divider />
           <FlexBox>
             <span style={{ color: '#555' }}>Entry</span>
-            <span style={{ fontWeight: 600, color: '#1976d2' }}>
-              {modal.price / modal.totalSpots}
-            </span>
-          </FlexBox>
-          <FlexBox>
-            <span style={{ color: '#555' }}>Apply 25 coupon</span>
-            <span style={{ color: '#1976d2' }}>25%</span>
-          </FlexBox>
-          <FlexBox>
-            <span style={{ color: '#555' }}>Usable cash bonus</span>
-            <span style={{ color: '#1976d2' }}>0</span>
+            <span style={{ fontWeight: 600, color: '#1976d2' }}>Free</span>
           </FlexBox>
           <Divider />
-          <FlexBox>
-            <span style={{ fontWeight: 700, fontSize: 17, color: '#1fa951' }}>
-              To Pay
-            </span>
-            <span style={{ fontWeight: 700, fontSize: 17, color: '#1fa951' }}>
-              {modal.price / modal.totalSpots}
-            </span>
-          </FlexBox>
           <Para>
             By joining this contest, you accept Dream11 T&C's and confirm that
             you are not resident of Andhra Pradesh, Assam, Nagaland, Odisha,

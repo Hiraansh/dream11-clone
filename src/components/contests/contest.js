@@ -88,7 +88,6 @@ const Last = styled.div`
 
 export function ContestDetail({ contest, handleClick }) {
   if (!contest) return null;
-  const entryFee = Math.floor(contest.price / contest.totalSpots);
   const spotsFilled = contest.totalSpots - contest.spotsLeft;
   const spotsPercent = Math.floor((spotsFilled / contest.totalSpots) * 100);
   const lowSpots = contest.spotsLeft <= Math.ceil(contest.totalSpots * 0.2);
@@ -99,11 +98,11 @@ export function ContestDetail({ contest, handleClick }) {
         <Section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontSize: '1.1rem', color: '#888', fontWeight: 500 }}>Prize Pool</div>
-            <Prize>₹{contest.price}</Prize>
+            <Prize>Free</Prize>
           </div>
           <div>
             <div style={{ fontSize: '1.1rem', color: '#888', fontWeight: 500 }}>Entry</div>
-            <Entry>₹{entryFee}</Entry>
+            <Entry>Free</Entry>
           </div>
         </Section>
         <Section>
@@ -126,7 +125,7 @@ export function ContestDetail({ contest, handleClick }) {
         </Section>
         <Section>
           <JoinButton onClick={handleClick} variant="contained">
-            Join for ₹{entryFee}
+            Join Free
           </JoinButton>
         </Section>
         <Last>
